@@ -8,11 +8,11 @@
       <div class="flex items-center">
         <!-- Navigation Gauche Desktop -->
         <nav class="hidden lg:flex items-center space-x-6 xl:space-x-8 text-white font-medium text-xs tracking-widest uppercase">
-          <a href="/" class="hover:text-tertiary transition">ACCUEIL</a>
-          <a href="/apropos" class="hover:text-tertiary transition">À PROPOS</a>
-          <a href="/services" class="hover:text-tertiary transition">SERVICES</a>
-          <a href="/boutique" class="hover:text-tertiary transition">BOUTIQUE</a>
-          <a href="/contacts" class="hover:text-tertiary transition">CONTACTS</a>
+          <router-link to="/" class="hover:text-tertiary transition">ACCUEIL</router-link>
+          <router-link to="/apropos" class="hover:text-tertiary transition">À PROPOS</router-link>
+          <router-link to="/services" class="hover:text-tertiary transition">SERVICES</router-link>
+          <router-link to="/boutique" class="hover:text-tertiary transition">BOUTIQUE</router-link>
+          <router-link to="/contacts" class="hover:text-tertiary transition">CONTACTS</router-link>
         </nav>
 
         <!-- Mobile Menu Toggle (Boxicons) -->
@@ -28,19 +28,19 @@
 
       <!-- Logo Centré -->
       <div class="flex items-center justify-center">
-        <a href="/">
+        <router-link to="/">
           <img :src="logo" alt="Relax Inn Spa" class="h-16 sm:h-20 md:h-24 object-contain" />
-        </a>
+        </router-link>
       </div>
 
       <!-- Bouton Action Droite (Desktop) -->
       <div class="flex justify-end items-center">
-        <a
-          href="/rendez-vous"
+        <router-link
+          to="/rendez-vous"
           class="hidden lg:flex text-white text-xs tracking-widest uppercase underline underline-offset-4 items-center gap-1 hover:text-tertiary transition whitespace-nowrap"
         >
           PRENDRE RENDEZ-VOUS ↗
-        </a>
+        </router-link>
       </div>
     </header>
 
@@ -58,18 +58,18 @@
         class="lg:hidden fixed top-24 left-0 w-full bg-secondary/95 backdrop-blur-md px-6 py-8 z-40 text-white border-b border-white/10 shadow-2xl"
       >
         <nav class="flex flex-col space-y-5 text-sm tracking-widest uppercase text-center">
-          <a href="/" @click="mobileOpen = false" class="hover:text-tertiary transition">ACCUEIL</a>
-          <a href="/apropos" @click="mobileOpen = false" class="hover:text-tertiary transition">À PROPOS</a>
-          <a href="/services" @click="mobileOpen = false" class="hover:text-tertiary transition">SERVICES</a>
-          <a href="/boutique" @click="mobileOpen = false" class="hover:text-tertiary transition">BOUTIQUE</a>
-          <a href="/contacts" @click="mobileOpen = false" class="hover:text-tertiary transition">CONTACTS</a>
-          <a
-            href="/rendez-vous"
+          <router-link to="/" @click="mobileOpen = false" class="hover:text-tertiary transition">ACCUEIL</router-link>
+          <router-link to="/apropos" @click="mobileOpen = false" class="hover:text-tertiary transition">À PROPOS</router-link>
+          <router-link to="/services" @click="mobileOpen = false" class="hover:text-tertiary transition">SERVICES</router-link>
+          <router-link to="/boutique" @click="mobileOpen = false" class="hover:text-tertiary transition">BOUTIQUE</router-link>
+          <router-link to="/contacts" @click="mobileOpen = false" class="hover:text-tertiary transition">CONTACTS</router-link>
+          <router-link
+            to="/rendez-vous"
             @click="mobileOpen = false"
             class="text-tertiary font-semibold pt-4 border-t border-white/10 flex items-center justify-center gap-2"
           >
             PRENDRE RENDEZ-VOUS ↗
-          </a>
+          </router-link>
         </nav>
       </div>
     </transition>
@@ -108,11 +108,11 @@
 
           <!-- Bloc 2 : Menu Nav 1 & Réseaux -->
           <div class="space-y-3">
-            <a href="/" class="block hover:text-white transition">ACCUEIL</a>
-            <a href="/apropos" class="block hover:text-white transition">À PROPOS</a>
-            <a href="/services" class="block hover:text-white transition">SERVICES</a>
-            <a href="/boutique" class="block hover:text-white transition">BOUTIQUES</a>
-            <a href="/contacts" class="block hover:text-white transition">CONTACTS</a>
+            <router-link to="/" class="block hover:text-white transition">ACCUEIL</router-link>
+            <router-link to="/apropos" class="block hover:text-white transition">À PROPOS</router-link>
+            <router-link to="/services" class="block hover:text-white transition">SERVICES</router-link>
+            <router-link to="/boutique" class="block hover:text-white transition">BOUTIQUES</router-link>
+            <router-link to="/contacts" class="block hover:text-white transition">CONTACTS</router-link>
 
             <div class="pt-4 space-y-2">
               <p class="text-white/70 font-semibold">NOS RESEAUX</p>
@@ -126,11 +126,11 @@
 
           <!-- Bloc 3 : Menu Nav 2 -->
           <div class="space-y-3">
-            <a href="/services" class="block hover:text-white transition">SERVICES</a>
-            <a href="/apropos" class="block hover:text-white transition">À PROPOS</a>
-            <a href="/services" class="block hover:text-white transition">SERVICES</a>
-            <a href="/boutique" class="block hover:text-white transition">BOUTIQUES</a>
-            <a href="/contacts" class="block hover:text-white transition">CONTACTS</a>
+            <router-link to="/services" class="block hover:text-white transition">SERVICES</router-link>
+            <router-link to="/apropos" class="block hover:text-white transition">À PROPOS</router-link>
+            <router-link to="/services" class="block hover:text-white transition">SERVICES</router-link>
+            <router-link to="/boutique" class="block hover:text-white transition">BOUTIQUES</router-link>
+            <router-link to="/contacts" class="block hover:text-white transition">CONTACTS</router-link>
           </div>
 
           <!-- Bloc 4 : Logo & Coordonnées -->
